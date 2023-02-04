@@ -1,0 +1,234 @@
+<!-- etiqueta tiene atributos un valor-->
+<!-- botón color="rojo" tamaño="grande" borde="negro"-->
+<!-- Hay Etiquetas que se cierran sola. ejemplo input, br-->
+<!-- Y Etiquetas que se abren y se cierran-- ejemplo h1 _ /h1 -->
+
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+    <!-- Head esta todo lo que no se puede ver en la pág. -->
+    <!-- Body esta lo que si podemos ver en la pág. -->
+
+    <head>
+        <meta charset="utf-8">
+        <!-- permite los caracteres especiales, hace cambio de codificación-->
+        
+        <!--metadatos: información que se encarga de escribir la inf de un objeto. -->
+        <!-- inf que describe datos. Es decir, los metadatos lo que hacen es describir recursos -->
+        <!-- los metadatos toman inf, (de img, video. audio) y como describe la inf, no se puede ver en la pág.-->
+        <!-- permite realizar cambios de ceo o mismo de codificación (en ese caso permite ver)-->
+        
+        <!-- estas son las metas más importantes-->
+        <meta name="keywords" content="JujutsuKaisen,ohmygod, programación ,primer programar"> 
+        <!-- son palabras clave para encontrar la pág. más rápido-->
+        <meta name="description" content="Es la primera vez que programo">
+        <!-- aca describís la pág. 50 a 70 caracteres-->
+        <meta name="author" content="Victoria Valentina Maidana Corti. VictoriaVMC">
+        <!-- autor del archivo-->
+        <meta name="copyright" conten="VictoriaVMC Inc.">
+        <!-- si la empresa está registrada se pone, es decir quién es el dueño-->
+        <meta name="robots" content="noindex">
+        <!-- se pone para decir si la pág. es indexada o noidexada, es decir si esta puesto en un índice. Se pone "index" o "no index"  -->
+        <!-- si pones "nondex" que no le aparezca en Google todo lo que escribiste en el head-->
+        <!-- so pones "index" salta en Google por buscar lo que describiste-->
+        <meta name="robots" content="follow">
+        <!--el robots también se le poner si es follow o nofollow -->
+        <!-- follow significa que tenemos importancia en el ceo, es decir en la empresa registrada.. no explico dalto-->
+
+        <title>HTML intro</title>
+        <!-- title es título de la pág., queda en la parte de arriba del link-->
+
+    </head>
+
+    <body>
+        <!-- hr hace una linea que separa las partes-->
+        <h1>Modelo de Principio</h1>
+        
+                <!-- h1 a h6 es los títulos dentro de la pág., no se puede repetir es por posicionamiento-->
+        <p> Escribo un párrafo. </p>
+        <p>
+            Estoy aprendiendo a programar, en el doc. Puse !-- y ahí está la explicación de las cosas que se hacen y como. <br>
+            Quiero <b> Pepsiiii </b>, maldita alergia... <i>Mañana es un nuevo día</i> <small>Pero igual no wua tomar pepsi </small> <br>
+            <i> Nomas recordar que la pepsi te hace mal, toma agua... o... Sprite agora xD</i>
+        </p>
+        <hr>
+        <!-- Etiquetas que se adaptan y llenan la línea/pág. ej. h1 por eso al poner h1 h2 h3 queda uno abajo de otra-->
+        <!-- Etiquetas que completan la línea/pág. son aquellas que quedan todo junto ejemplo las sig.-->
+        <center>
+        <h2> Modelos de etiquetas que completan la línea</h2> 
+        </center>
+        <b> Negrita </b> 
+        <i> Itálica </i> 
+        <strike> Tachado </strike> 
+        <textarea> Hace un recuadro...Puedo agrandar en la pág. y escribir dentro</textarea>
+        <textarea readonly=""> El readonly permite que solo lo podamos leer y si permite mover o agrandar, pero no escribir </textarea>
+        <small> Chiquita</small> 
+        <big> Grande xD </big> <br>
+        Hay más, pero hasta ahí, por ahora...<br>
+        <hr>
+<i>Si se utiliza un div, achica la caja (la pág.) y si ponemos una etiqueta que complete pág., solo rellenaría el div, no el body</i>
+<div>
+    <center>
+    <h2>Modelo div</h2>
+    </center>
+    <p> En una de esas salió la:</p>
+    <b> Prueba</b>
+</div>
+<hr>
+<center> 
+
+    <h3>Modelos de Redirección</h3>
+</center>
+<p> Hay diferentes formas de redirigir, y pueden ser de una ruta externa o una ruta interna </p>
+<!-- Las rutas externas o internas, hay externas que no están fuera de nuestro servidor-->
+<!-- https las externas (podría ser http pero no es seguro). El otro referimos localmente al recurso-->
+<ol>
+    <li> <b> A Redirige a otra pág. Es decir, de ruta Externa </b> </li> 
+        <a href= "https://www.youtube.com/watch?v=FodABEC0H2c">Ejemplo 1</a>  <br>
+    <li><b> A Redirige a otra pág. Pero interno, desde otro archivo en pc. </b></li>
+        <a href="pag 2.html"> Ejemplo N2 </a> o 
+<!-- si ponemos en una carpeta aparte hay que poner el nombre de la carpeta/título del archivo-->
+        <a href="Ejemplo/ej.html">Ejemplo N3.</a> <br>
+<!-- para volver a carpetas atrás poner ../../index.html-->
+<!-- Br tira las cosas abajo, es decir termina de completar la línea/ la pág.-->
+    <li> Si quiero que redirija, pero abriendo otra pestaña, no cerrando esta:</li>
+        Haz <a href="https://www.youtube.com/watch?v=uvsPzuriDdA" target="_Blank"> Ejemplo 4 </a> <br>
+</ol>
+
+Tambien puedo poner un video de yt en la pág y no es necesario redirigir: <br>
+<center>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/rsbZxD1N2Ao" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
+<!-- Entro al video de yt, hago click en la opcion de compartir y ahi selecciono la opcion Incorporar, copio y pego-->
+<hr>
+<center>
+    
+    <h4> Modelo de listas</h4>
+</center>
+<p> Hay dos tipos de listas: <br>
+    Las desordenadas ul, adentro tiene los li que son los elementos de la lista. (Marca con puntitos) Ejemplo: <br> <br>
+<center>
+    Cosas a la que soy alérgica
+</center>
+    <ul>
+        <li> Pepsi</li>
+        <li> Flores</li>
+        <li> Chocolate</li>
+        <li> Arena </li>
+        <li> Lana </li>
+        <li> Pelo de Perro</li>
+        <li> Frutilla</li>
+        <li> Tierra etc.</li>   
+   </ul>
+
+    Las ordenadas ol, adentro tiene los li que son los elementos de la lista. (Los enumera) Ejemplo: <br>
+    <ol><li> Pepsi</li>
+        <li> Flores</li>
+        <li> Chocolate</li>
+        <li> Arena </li>
+        <li> Lana </li>
+        <li> Pelo de Perro</li>
+        <li> Frutilla</li>
+        <li> Tierra etc. </li>
+    </ol>
+
+</p>
+<hr>
+<center> 
+    <h5> Modelos de Multimedia </h5>
+</center>
+<p> Imágenes: </p>
+<!--href, src son ruta del archivo de donde queremos sacar, puede ser interna o externa -->
+<img src="https://pm1.narvii.com/6060/168f15a578c2a69609afc0a27053caa9f46e630e_hq.jpg" alt="cubitos serie" title="Cubitos">  <br>
+<i>Esta img es de una pág. externa, la elimina y desaparece</i>
+<!-- en caso de que se ponga mal la img y no aparezca, entonces se usa el alt, que es importante para el ceo-->
+<!-- con alt aparecera el nombre de la imag y el title cuando pones el cursor encima de la img aparece ese nombre en la img-->
+<!-- si o si poner alt-->
+
+<p> 2 Imagen:</p>
+<img src="Ejemplo/2.jpg" alt="Logo csgo" title="Csgo"> <br>
+<i> Esta img es un archivo local, con las mismas proporciones y de la misma calidad</i>
+<!-- width es ancho y heidht es medida. a menos que sea proporcionado no hay que poner los dos. Si modificamos en HTML no podemos modificar en CSS-->
+
+<p> 3 Imagen para cambiar proporciones</p>
+<!-- center lo que hace es centrar, sirve para todo-->
+<center>
+<img src="Ejemplo/1.jpg" width="400xp" alt="Itatori" title="Jujutsu Kaisen">
+</center> <br>
+<i> Esta img archivo interno, aplicando 400 de ancho</i>  <br><br>
+
+<p> 4 Imagen con Titulo y nombre de img</p>
+<center> <img src="http://images7.memedroid.com/images/UPLOADED787/5f8548755d4ad.jpeg" width="400" alt="Perro Pepsi" title="Perro Feliz"> </center>
+
+<p> Videos: </p>
+<video src="Ejemplo/video.webm" controls="" width="300 xp"> </video>
+<!-- controls tiene atributo configurado por el navegador--> <!-- puse width para que achique-->
+
+<p> Video desde yt: </p>
+<center><iframe width="560" height="315" src="https://www.youtube.com/embed/hhqUq-kZUB4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </center>
+
+<p> Audio - Rosenfeld "Dangerous Woman"</p>
+<audio src="Ejemplo/Audio.mp3" controls=""></audio> <br>
+<center> 
+    <hr>
+    <h6> Modelos de formularios</h6>
+</center>
+<!-- entrada de datos input type es el tipo de elemento que entrara el name es que le estoy solicitando-->
+<form action="" method="post" target="_blank"> 
+    <p>Nombre: <input type="text" required="" value=""></p> 
+<!-- Required quiere decir que si o si debe rellenar para enviar-->
+    <p>Apellido: <input type="text" required="" value=""></p>
+    <p>DNI: <input type="number" required="" value=""> </p>
+    <p> Fecha de Nacimiento: <input type="date" required="" value=""></p>
+    <!-- date es para poner una fecha-->
+    <!--input type="time" name="Hora:"-->
+    <p>Correo: <input type="email" required="" value=""></p>
+    <p>Contraseña: <input type="password" required=""  value=""></p>
+    <p>Color favorito: <input type="color" required=""  value=""  placeholder="rojo, azul, negro?"></p>
+    <!-- nos muestra una paleta de colores-->
+    <p>Promedio del 0 al 10: <input type="range" min="0" max="10" required="" name="Promedio:"></p>
+    <!-- el rango puede ser de la A a Z o de 0 a 1000-->
+    <p>Modelo prueba de Boton: <input type="button" required=""  value="Resetear"></p>
+    <!-- el button si o si se maneja con value, que es lo que va a devolver. Lo que escribís en value dirá en el botón-->
+    <input type="submit" value="Enviar datos">
+    <!-- submit nos envía los datos, está definido por el servidor -->
+    <!-- es una validación del lado del fronten-->
+    <input type="reset" value="Restaurar formulario">
+    <textarea> también funciona como input, algo para decir? </textarea>
+    </form> <br>
+    
+    <center> 
+        <p> Para ir a una Pag HTML Semantico </p> 
+</center>
+    <a href="HTMLsintaxis.html"> Haz Click Aqui </a> 
+    <img src="https://i.pinimg.com/originals/94/68/92/946892c88f813802266e4e6931ada223.gif"></img>
+    <p>
+        <hr>
+        Las tablas en HTML antes se utilizaban más, tiene filas y columnas. <br>
+        <table border="1px">
+            <!-- tablas se puede dar propiedades ej border, sino se saca y con css se le acomoda -->
+            <!-- las tablas no centran, para centrar hay que poner dentro del td, centra la caja hija(la que esta dentro) no centra las hijas de sus cajas hijas-->
+            <tr>
+                <!-- tr define las filas-->
+                <td><b> Nombre </b></td> 
+                <td><b> Apellido </b></td> 
+                <td><b> Correo </b></td> 
+            </tr>
+            <!-- pone uno al lado del otro y cuando abrimos otro tr, lo pone debajo los datos, por la tabla anterior. -->
+            <tr>
+                <td> Victoria Valentina </td> 
+                <td> Maidana Corti</td> 
+                <td> victoriavmcortitrabajos@gmail.com victoriavmaidanacortitrabajos@hotmail.com</td> 
+            </tr>
+        </table>
+    </p>
+    <p>
+        <hr>
+        Pág de noticias o de revista, es decir, tiene salto de noticia a otra, y no es necesario leer toda la noticia, tocas el boton a la sig noticia y listo ej:
+    </p>
+    <a href="Revista.html"> Página de Poemas</a>
+    
+    <footer>
+        <h4> Armado por VictoriaVMC</h4>
+    </footer>
+</body> 
+</html>
